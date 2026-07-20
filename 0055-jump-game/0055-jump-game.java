@@ -7,6 +7,11 @@ class Solution {
                 return false;
             }
             reach = Math.max(reach,i+nums[i]);
+
+             // If we can already reach the last index
+            if (reach >= nums.length - 1) {
+                return true;
+            }
         }
 
         return true;
